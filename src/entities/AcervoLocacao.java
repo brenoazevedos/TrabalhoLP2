@@ -145,6 +145,19 @@ public class AcervoLocacao extends Arquivo{
 		}
 		return null;
 	}
+	//PESQUISA SE CLIENTE POSSUI MAIS DE UMA LOCACAO
+	public boolean clientePossuiMaisDeUmaLocacao(Cliente cliente) {
+		int count = 0;
+		for(int i = 0; i<locacoes.size(); i++){
+			if(locacoes.get(i).getCliente().equalsIgnoreCase(cliente.getNome())) {
+				count++;
+			}
+		}
+		if(count > 1) {
+			return true;
+		}
+		return false;
+	}
 	//CALCULA QUANTIDADE DE DIAS DE ATRASO DA DEVOLUCAO
 	public Integer totalDiasMulta(Integer cod) {
 		for(int i = 0; i<locacoes.size(); i++){

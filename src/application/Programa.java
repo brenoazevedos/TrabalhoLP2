@@ -170,7 +170,7 @@ public class Programa {
 						System.out.println("\n\nInsira o código da locação que deseja deletar: ");
 						Locacao locacao = Locadora.al.pesquisarLocacao(sc.nextInt());
 						Locadora.af.atualizarDisponibilidade(Locadora.af.pesquisarFilme(locacao.getFilme()), true);
-						Locadora.ac.atualizarLocacao(Locadora.ac.pesquisarCliente(locacao.getCliente()), false);
+						Locadora.ac.atualizarLocacao(Locadora.ac.pesquisarCliente(locacao.getCliente()), ((Locadora.al.clientePossuiMaisDeUmaLocacao(Locadora.ac.pesquisarCliente(locacao.getCliente()))) ? true : false));
 						Locadora.ap.excluirPagamento(locacao.getCod());
 						Locadora.al.excluirLocacao(locacao.getCod());
 					}catch(InputMismatchException e) {
