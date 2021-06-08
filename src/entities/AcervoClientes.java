@@ -49,10 +49,12 @@ public class AcervoClientes extends Arquivo {
 		boolean bool = false;
 		//ATUALIZA NA LISTA
 		for(int i = 0; i<clientes.size(); i ++) {
-			if(clientes.get(i).getNome().equalsIgnoreCase(cliente.getNome()) ) {
-				clientes.get(i).setLocacao(locacao);
-				bool = true;
-			}
+			
+				if(clientes.get(i).getNome().equalsIgnoreCase(cliente.getNome()) ) {
+					clientes.get(i).setLocacao(locacao);
+					bool = true;
+				}
+			
 		}
 		//REGRAVA O ARQUIVO INTEIRO COM O CONTEUDO DA LISTA
 		if(bool) {

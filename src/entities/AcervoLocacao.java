@@ -122,7 +122,7 @@ public class AcervoLocacao extends Arquivo{
 	//IMPRIME TODAS LOCACOES QUE PASSARAM DA DATA DE SEREM DEVOLVIDAS
 	public void imprimirLocacaosPendentes() {
 		for(Locacao locacao : locacoes){
-			if(locacao.getDataDevolucao().before(new Date()))
+			if(locacao.getDataDevolucao().before(new Date())&& locacao.getDataDevolvido().before(locacao.getDataLocacao()))
 			System.out.println(locacao);
 			
 		}
@@ -130,11 +130,20 @@ public class AcervoLocacao extends Arquivo{
 	//IMPRIME TODAS LOCACOES QUE ESTAO DENTRO DO PRAZO PARA SEREM DEVOLVIDAS
 	public void imprimirLocacaosSemPendencia() {
 		for(Locacao locacao : locacoes){
-			if(locacao.getDataDevolucao().after(new Date()))
+			if(locacao.getDataDevolucao().after(new Date())  && locacao.getDataDevolvido().before(locacao.getDataLocacao()))
 			System.out.println(locacao);
 			
 		}
 	}
+	
+	public void imprimirLocacaosDevolvidas() {
+		for(Locacao locacao : locacoes){
+			if(locacao.getDataDevolvido().after(locacao.getDataLocacao()))
+			System.out.println(locacao);
+			
+		}
+	}
+	
 	//PESQUISA LOCACAO PELO COD
 	public Locacao pesquisarLocacao(Integer cod) {
 		for(int i = 0; i<locacoes.size(); i++){

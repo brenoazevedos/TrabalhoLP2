@@ -13,6 +13,7 @@ public class MenuCliente {
 					+ "\n4-Ver Lista de Clientes sem Pendencia"
 					+ "\n5-Ver Lista de Clientes com pendencia"
 					+ "\n6-Ver Lista de todos os Clientes"
+					+ "\n7-Voltar"
 					+ "\nDigite a opção desejada: ");
 			return sc.nextInt();
 		} catch(InputMismatchException e) {

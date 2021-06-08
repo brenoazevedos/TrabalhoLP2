@@ -13,6 +13,7 @@ public class MenuFilme {
 					+ "\n4-Ver Lista de Filmes Disponiveis"
 					+ "\n5-Ver Lista de Filmes Locados"
 					+ "\n6-Ver Lista de todos os Filmes"
+					+ "\n7-Voltar"
 					+ "\nDigite a opção desejada: ");
 			return sc.nextInt();
 		} catch(InputMismatchException e) {

@@ -1,8 +1,8 @@
 package entities;
 
 public class Cliente {
-		protected String nome;
-		protected boolean locacao;
+		private String nome;
+		private boolean locacao;
 
 		
 		//CONSTRUTOR DE CLIENTE UTILIZADO PARA CADASTRO

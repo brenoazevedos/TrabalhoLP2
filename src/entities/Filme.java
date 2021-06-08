@@ -1,8 +1,8 @@
 package entities;
 
 public class Filme {
-		protected String nome;
-		protected boolean disponivel;
+		private String nome;
+		private boolean disponivel;
 		//CONSTRUTOR PARA CADASTRO DE CLIENTE
 		public Filme(String nome) {
 			this.nome = nome;

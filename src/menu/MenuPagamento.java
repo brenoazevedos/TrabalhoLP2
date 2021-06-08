@@ -14,6 +14,7 @@ public class MenuPagamento {
 					+ "\n4-Ver Lista de Pagamentos feitos"
 					+ "\n5-Ver Lista de Pagamentos pendentes"
 					+ "\n6-Ver Lista de todos os Pagamentos"
+					+ "\n7-Voltar"
 					+ "\nDigite a opção desejada: ");
 			return sc.nextInt();
 		} catch(InputMismatchException e) {

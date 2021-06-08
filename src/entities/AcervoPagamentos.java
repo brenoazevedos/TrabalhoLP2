@@ -46,7 +46,7 @@ public class AcervoPagamentos extends Arquivo{
 			System.out.println("Error: " + e.getMessage());
 		}
 		carregarLista();
-		System.out.println("Pagamento cadastrado.");
+		System.out.println("Pagamento gerado.");
 	}
 	//FUNCAO ATUALIZA VALOR TOTAL DE FILME QUE FOI DEVOLVIDO DE ACORDO COM A MULTA(PODE SER APLICADA OU NAO)
 	public void atualizarValorTotal(Integer cod, Double VlrMultaPorDia,Integer totalDiasMulta, Double valor) {
