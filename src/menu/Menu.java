@@ -9,7 +9,8 @@ public class Menu {
 		Scanner sc = new Scanner(System.in);
 			
 		try {
-			System.out.printf("\n\n1-Filme"
+			System.out.printf("\n\nBem vindo ao Sistema Locadora:\n"
+					+ "\n1-Filme"
 					+ "\n2-Clientes"
 					+ "\n3-Locação"
 					+ "\n4-Pagamentos/Devolução"

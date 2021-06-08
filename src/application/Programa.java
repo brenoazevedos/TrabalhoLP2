@@ -268,7 +268,7 @@ public class Programa {
 			}
 				
 		}while(opc != 5);
-	
+		System.out.println("\n\nEncerrando...\nAté Logo!!");
 	}
 
 }
